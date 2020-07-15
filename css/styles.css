@@ -10,8 +10,10 @@ body {
   line-height: 1.33;
   letter-spacing: 0.02em;
   color: #212121;
-  text-decoration: none;
 }
 .navigation-list-link:hover {
   color: #2196f3;
+}
+.link {
+  text-decoration: none;
 }
