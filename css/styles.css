@@ -1,19 +1,214 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondery-font: 'Raleway';
+  --title-light-theme-color: #212121;
+  --title-dark-theme-color: #ffffff;
+  --title-secondery-color: #757575;
+  --accent-color: #2196f3;
+}
 body {
-  background-color: #ffff;
-  font-family: 'Roboto', sans-serif;
+  background-color: var(--title-dark-theme-color);
+  font-family: var(--main-font);
+  font-style: normal;
   font-size: 14px;
-  color: #212121;
+  color: var(--title-light-theme-color);
+}
+/* HEDDER */
+.logo.link {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.logo-element {
+  color: var(--accent-color);
 }
 .navigation-list-link {
-  font-style: normal;
   font-weight: 500;
   line-height: 1.33;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--title-light-theme-color);
 }
-.navigation-list-link:hover {
-  color: #2196f3;
+.navigation-list-link:hover,
+.navigation-list-link:focus {
+  color: var(--accent-color);
 }
 .link {
   text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.hedder-address-link,
+.hedder-address-tell-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--title-secondery-color);
+}
+
+.hedder-address-list .link:hover,
+.hedder-address-list .link:focus {
+  color: var(--accent-color);
+}
+/* HERRO SECTION */
+.modal-btn {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 187% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--title-dark-theme-color);
+  background-color: var(--accent-color);
+}
+
+.hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--title-dark-theme-color);
+}
+
+/* DESCRIPTION */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-light-theme-color);
+}
+.subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-light-theme-color);
+}
+.subtitle p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: var(--title-secondery-color);
+}
+.subtitle-work h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-dark-theme-color);
+}
+.subtitle-team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-light-theme-color);
+}
+.subtitle-team p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.19;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-secondery-color);
+}
+/* OUR CLIENT */
+/* Footter */
+.logo-footer {
+  font-family: var(--secondery-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.19;
+  line-height: 31px;
+  /* identical to box height */
+  letter-spacing: 0.03em;
+  color: var(--title-dark-theme-color);
+}
+.footer-address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: var(--title-dark-theme-color);
+}
+.footer-address-link {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  /* or 171% */
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.social-link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-dark-theme-color);
+}
+/* PORTFOLIO */
+/*MAIN*/
+.btn-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-light-theme-color);
+}
+.btn-name:hover,
+.btn-name:focus {
+  color: var(--title-dark-theme-color);
+  background-color: var(--accent-color);
+}
+/*GALARY PORTFOLIO*/
+.projects-list {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  color: var(--title-light-theme-color);
+}
+.projects-list p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 187% */
+  letter-spacing: 0.03em;
+  color: var(--title-secondery-color);
 }
