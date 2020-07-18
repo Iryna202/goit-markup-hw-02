@@ -33,6 +33,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--title-light-theme-color);
 }
+.navigation-list-link.current,
 .navigation-list-link:hover,
 .navigation-list-link:focus {
   color: var(--accent-color);
@@ -89,7 +90,7 @@ body {
 .title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.17px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 
