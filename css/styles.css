@@ -1,6 +1,6 @@
 :root {
   --main-font: 'Roboto', sans-serif;
-  --secondery-font: 'Raleway';
+  --secondery-font: 'Raleway', sans-serif;
   --title-light-theme-color: #212121;
   --title-dark-theme-color: #ffffff;
   --title-secondery-color: #757575;
@@ -15,7 +15,7 @@ body {
 }
 /* HEDDER */
 .logo.link {
-  font-family: Raleway;
+  font-family: var(--secondery-font);
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -29,7 +29,8 @@ body {
 }
 .navigation-list-link {
   font-weight: 500;
-  line-height: 1.33;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-light-theme-color);
 }
@@ -82,7 +83,6 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: var(--title-dark-theme-color);
 }
 
@@ -93,7 +93,6 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--title-light-theme-color);
 }
 .subtitle {
@@ -106,13 +105,12 @@ body {
   color: var(--title-light-theme-color);
 }
 .subtitle p {
-  font-weight: normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
-
   letter-spacing: 0.03em;
-
+  text-transform: none;
   color: var(--title-secondery-color);
 }
 .subtitle-work h3 {
@@ -122,7 +120,6 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--title-dark-theme-color);
 }
 .subtitle-team {
@@ -135,7 +132,7 @@ body {
   color: var(--title-light-theme-color);
 }
 .subtitle-team p {
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   /* identical to box height */
@@ -149,23 +146,24 @@ body {
   font-family: var(--secondery-font);
   font-style: normal;
   font-weight: 700;
-  font-size: 1.19;
-  line-height: 31px;
+  font-size: 26px;
+  line-height: 1.19;
   /* identical to box height */
   letter-spacing: 0.03em;
   color: var(--title-dark-theme-color);
 }
 .footer-address {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   /* or 171% */
   letter-spacing: 0.03em;
   color: var(--title-dark-theme-color);
 }
 .footer-address-link {
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
@@ -206,7 +204,7 @@ body {
   color: var(--title-light-theme-color);
 }
 .projects-list p {
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.88;
   /* identical to box height, or 187% */
